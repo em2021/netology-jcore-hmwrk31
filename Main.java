@@ -21,7 +21,9 @@ public class Main {
 
         }
         if (result) {
-            logName.append("created successfully\n");
+            logName.append("created successfully in ");
+            logName.append(fileName.getParent());
+            logName.append('\n');
         } else {
             logName.append("creation failed\n");
         }
